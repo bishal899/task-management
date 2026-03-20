@@ -1,0 +1,58 @@
+.task-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    align-content: start;
+    animation: appear 0.5s linear;
+}
+
+.task-container h4 {
+    grid-column: 1 / -1;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--border);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.task-container p {
+    grid-column: 1 / -1;
+    color: #999;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-style: italic;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+}
+
+@media (max-width: 1024px) {
+    .task-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .task-container {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .task-container h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .task-container {
+        gap: 0.6rem;
+    }
+
+    .task-container h4 {
+        font-size: 1rem;
+    }
+
+    .task-container p {
+        padding: 1.5rem 1rem;
+    }
+}

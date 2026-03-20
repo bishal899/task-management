@@ -1,0 +1,31 @@
+:root {
+  --bg: #FCFCFC;
+  --primary: #256EFF;
+  --complete: #3DDC97;
+  --delete: #FF495C;
+  --border: #090909;
+  /* --shadow: ; */
+
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
