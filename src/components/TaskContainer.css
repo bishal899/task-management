@@ -1,27 +1,23 @@
 .task-container {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
-    align-content: start;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     animation: appear 0.5s linear;
 }
 
 .task-container h4 {
-    grid-column: 1 / -1;
     font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
     color: var(--border);
     text-transform: capitalize;
     font-weight: 700;
 }
 
 .task-container p {
-    grid-column: 1 / -1;
-    color: #999;
+    color: #010101;
     text-align: center;
     padding: 2rem 1rem;
-    font-style: italic;
     background-color: #f9f9f9;
     border-radius: 6px;
 }

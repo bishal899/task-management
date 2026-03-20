@@ -18,7 +18,7 @@
 
 .completed-container p {
     grid-column: 1 / -1;
-    color: #999;
+    color: #010101;
     text-align: center;
     padding: 2rem 1rem;
     font-style: italic;

@@ -10,7 +10,7 @@ export default function TaskInput() {
             <div className="task-input">
                 <input
                     type="text"
-                    className='input'
+                    className={`input ${newTask ? 'has-value' : ''}`}
                     required
                     value={newTask}
                     onChange={(e) => setNewTask(e.target.value)}

@@ -9,13 +9,15 @@ export default function CompletedTasks() {
     return (
         <div className="completed-container">
             <h4>completed</h4>
-            {
-                completed.length < 1
-                    ? <p>not completed any task</p>
-                    : tasks.map((task, i) => (
-                        task.tags.completed && <TaskItem key={i} value={task} id={i} />
-                    ))
-            }
+            <div className="container">
+                {
+                    completed.length < 1
+                        ? <p>not completed any task</p>
+                        : tasks.map((task, i) => (
+                            task.tags.completed && <TaskItem key={i} value={task} id={i} />
+                        ))
+                }
+            </div>
         </div>
     )
 }

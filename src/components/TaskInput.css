@@ -41,7 +41,8 @@
     background-color: transparent;
 }
 
-.task-input .input:focus ~ label {
+.task-input .input:focus ~ label,
+.task-input .input.has-value ~ label {
     top: -5%;
     z-index: 10;
     color: var(--primary);
@@ -52,11 +53,6 @@
     outline: none;
     border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(37, 110, 255, 0.1);
-}
-
-.task-input .input::placeholder {
-    color: #999;
-    font-style: italic;
 }
 
 .input-container button {
@@ -73,8 +69,6 @@
 }
 
 .input-container button:hover {
-    background-color: #1a4fc7;
-    border-color: #1a4fc7;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(37, 110, 255, 0.3);
 }

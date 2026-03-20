@@ -9,10 +9,11 @@
     gap: 1rem;
     background-color: var(--bg);
     transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .task:hover {
+    border: 2px solid var(--primary);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
 }
@@ -20,20 +21,20 @@
 .task-info {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     gap: 0.5rem;
 }
 
 .task-heading {
-    font-size: 1.05rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 600;
     color: var(--border);
-    word-break: break-word;
 }
 
 .task-info span {
     font-size: 0.8rem;
-    color: #999;
+    color: #010101;
     font-weight: 500;
 }
 
@@ -44,7 +45,7 @@
 
 .task.completed .task-heading {
     text-decoration: line-through;
-    color: #999;
+    color: #010101;
 }
 
 .task-btns {
